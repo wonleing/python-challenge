@@ -1,0 +1,29 @@
+#!/usr/bin/python
+b="""
+Abj ehaavat qbja gur pbqr, gur znva cbvagf bs vagrerfg gung ner nobir naq orlbaq gur Znaqryoebg frg ner nf sbyybjf:
+
+vzt = vzt.genafcbfr(Vzntr.SYVC_GBC_OBGGBZ)
+
+Guvf vf erdhverq orpnhfr gur vzntr jr ner pbzcnevat jvgu vf n ubevmbagny zveebe vzntr bs gur Znaqryoebg lbh perngr hfvat gur inyhrf cebivqrq.
+
+vs tvs_cvk <> vg naq tvs_cvk < 127:
+
+Gur tvs_cvk < 127 jnf erdhverq orpnhfr gurer jrer ab 128'f va gur TVS, gurl jrer nyy 127 ohg gurfr jrer abg npghnyyl n qvssrerapr jr jrer ybbxvat sbe.
+
+Nsgre ehaavat guvf pbqr, jr svaq gung gurer ner 1679 qvssreraprf orgjrra gur pnyphyngrq Znaqryoebg frg naq gur TVS vzntr. Guvf yrnqf hf vagb Yriry 3.
+
+Fgntr 3
+
+Onpx gb tbbtyr ntnva. Abj gur svany vgrz bs vasbezngvba jr erdhver vf nyfb va gur UGZY fbhepr naq gung vf 'HSBf?'.
+Chggvat 1679 naq HSBf vagb tbbtyr fubhyq oevat hc fbzr vagrerfgvat vgrzf bs vasbezngvba, vapyhqvat fbzr nobhg n genafzvffvba sebz FRGV bs n fgevat bs 1679 ovanel chyfrf. Jurer jrer gurfr chyfrf frag gb? Nccneragyl n zrffntr pnyyrq gur 'Nerpvob zrffntr' jnf frag gb tybohyne fgne pyhfgre Z13 va 1974 naq 'nerpvob' vf gur nafjre gb guvf Chmmyr naq gur ybpngvba bs gur arkg yriry.
+"""
+a=""
+for i in b:
+    c=ord(i)
+    if (c > 64 and c < 78) or (c>96 and c<110):
+        a+=chr(c+13)
+    elif (c > 77 and c < 91) or (c>109 and c<123):
+        a+=chr(ord(i)-13)
+    else:
+        a+=i
+print a
